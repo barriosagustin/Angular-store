@@ -11,3 +11,15 @@
     top: 20px;
     color: blue;
 }
+
+.animation{
+animation-name: switchColor;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+cursor: pointer;
+}
+
+@keyframes switchColor {
+    from {color: black;}
+    to {color: white;}
+  }
