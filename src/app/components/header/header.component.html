@@ -4,9 +4,9 @@
             <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
             </i>
             
-            <strong routerLink="products" class="animation" style="font-size: 30px;;">AngularStore</strong>
+            <strong routerLink="products" class="animation" style="font-size: 30px;">AngularStore</strong>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="search products">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm"(keyup)="search($event)" placeholder="Search products">
             </div>
             <span class="fas fa-search search-icon"></span>
 
